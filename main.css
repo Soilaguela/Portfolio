@@ -1,10 +1,141 @@
-body{
-    background-color: antiquewhite;
+body {
+    background-color: rgb(255, 249, 240);
+    color: #333;
+    transition: background-color 0.3s, color 0.3s; /* Animação suave */
+  
 }
 
-.back-text{
-    font-family: "Comfortaa", sans-serif;
+.back-text {
+    position: absolute;
+    /* Permite posicionar o texto livremente */
+    bottom: 0;
+    /* Posiciona o texto no fundo do contêiner */
+    right: 0;
+    /* Posiciona o texto na lateral direita */
+    font-family: "Archivo Black", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: bolder;
+    font-size: 150px;
     font-style: normal;
+    color: rgb(241, 239, 233);
+    z-index: -1;
+    /* Move o texto para baixo de todos os elementos */
+}
+
+.container-center {
+    display: flex;
+    /* Ativa Flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    height: 60vh;
+    /* Ocupa a altura total da janela */
+    width: 100%;
+    /* Ocupa a largura total */
+    overflow: hidden;
+    /* Garante que nada saia do contêiner */
+}
+.container-center h1{
+    font-family: 'Poppins';
+    font-size: 50px;
+    text-emphasis: filled;
+}
+
+ul li i{
+  font-size: large;
+}
+
+p a{
+ 
+  background-color: #d0d0ce;
+    border-radius: 4px;
+    padding: 5px;
+    text-decoration: auto;
+    color: #333;
+}
+
+.content{
+  font-family: "Comfortaa", serif;
+  padding: 1% 17%;
+  text-align: justify;
+  line-height: 2;
+}
+
+button{
+  position: relative;
+  top: auto;
+  left: 24px;
+}
+
+p{
+  padding: 1%;
+}
+
+footer{
+  padding: 1% 17%;
+}
+
+footer a {
+  padding: 10px;
+  color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 3% 11% 0% 11%;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: rgb(31, 30, 30);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #d0d0ce;
+}
+
+.active {
+    color: #353535;
+}
+
+.email {
+  font-style: italic;
+  color: #555;
+}
+
+/* Modo escuro */
+body.dark-mode {
+  background-color: rgb(18, 18, 18);
+  color: #f5f5f5;
+}
+
+/* Estilos do botão */
+.mode-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #d0d0ce;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.mode-toggle.dark-mode {
+  background-color: #555;
+  color: #f5f5f5;
 }
