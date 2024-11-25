@@ -24,3 +24,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menuToggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+        navMenu.classList.toggle("hidden");
+
+        // Alterna o ícone do botão
+        menuToggle.innerHTML = navMenu.classList.contains("show")
+            ? '<i class="bi bi-x"></i>'
+            : '<i class="bi bi-list"></i>';
+    });
+});
+
