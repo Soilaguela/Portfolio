@@ -1,0 +1,220 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 249, 240);
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    /* Animação suave */
+}
+
+/* Header Styles */
+.back-text {
+    position: absolute;
+    /* Permite posicionar o texto livremente */
+    bottom: 0;
+    /* Posiciona o texto no fundo do contêiner */
+    right: 0;
+    /* Posiciona o texto na lateral direita */
+    font-family: "Archivo Black", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-size: 150px;
+    font-style: normal;
+    color: rgb(241, 239, 233);
+    z-index: -1;
+    /* Move o texto para baixo de todos os elementos */
+}
+
+.mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #d0d0ce;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+li ul button {
+    position: relative;
+    top: auto;
+}
+
+p {
+    padding: 1%;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 3% 10% 0% 10%;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: rgb(31, 30, 30);
+    text-align: center;
+    border-radius: 20px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #d0d0ce;
+}
+
+/* Contact Section */
+.contact {
+    padding: 0px 20px;
+    text-align: center;
+    font-family: "Comfortaa", serif;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-emphasis-style: circle;
+}
+
+.contact p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.contact .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form {
+    background-color: white;
+    padding: 44px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin: 8px;
+    font-weight: 600;
+}
+
+input, textarea {
+    font-family: 'Poppins';
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    font-weight: 600;
+    border: none;
+    font-family: 'Poppins';
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    font-family: "Archivo Black", sans-serif;
+    text-align: center;
+
+    color: white;
+    padding: 1% 17%;
+    font-size: 24px;
+    margin-top: 40px;
+}
+button {
+    position: relative;
+    top: 12px;
+
+}
+
+p {
+    padding: 1%;
+}
+
+
+footer a {
+    padding: 10px;
+    color: #333;
+}
+
+/* Modo escuro */
+body.dark-mode {
+    background-color: rgba(18, 18, 18, 0.95);
+    color: #f5f5f5;
+  }
+  
+  /* Conteúdo principal */
+  .dark-mode .content {
+    color: #f5f5f5;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Texto de fundo */
+  .dark-mode .back-text {
+    color: rgb(255 255 255 / 7%);
+  }
+
+  .dark-mode a {
+    color: #F5F5F5
+  }
+  
+  .dark-mode p a {
+    background-color: #2c2c2c;
+  }
+  
+  .dark-mode a:hover {
+    color: #070707;
+  }
+  
+  /* Botão no modo escuro */
+  .mode-toggle.dark-mode {
+    background-color: #333;
+    color: #f5f5f5;
+  }
+  
+  /* Rodapé */
+  .dark-mode footer a {
+    color: #bbb;
+    /* Cor mais clara no modo escuro */
+  }
+
+  .dark-mode form {
+    background-color: #080707;
+    box-shadow: 0 4px 10px rgb(255 255 255 / 14%);
+}
