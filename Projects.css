@@ -24,7 +24,19 @@ body {
     /* Move o texto para baixo de todos os elementos */
 }
 
-
+.mode-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #d0d0ce;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
 
 button {
     position: relative;
@@ -38,6 +50,12 @@ p {
 
 footer {
     padding: 1% 17%;
+    font-size: 24px;
+}
+
+.carousel-slide a{
+  color: #333;
+  font-size: 24px;
 }
 
 footer a {
@@ -47,7 +65,7 @@ footer a {
 
 ul {
     list-style-type: none;
-    padding: 3% 11% 0% 11%;
+    padding: 3% 10% 0% 10%;
     margin: 0;
     overflow: hidden;
     font-family: "Poppins", sans-serif;
@@ -61,6 +79,7 @@ li a {
     display: block;
     color: rgb(31, 30, 30);
     text-align: center;
+    border-radius: 20px;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -98,10 +117,11 @@ li a:hover:not(.active) {
 }
 
 .carousel-slide img {
-    width: 80%;
+    width: 50%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
+    box-shadow: 0 4px 10px #15131333;
 }
 
 .carousel-slide h3 {
@@ -166,12 +186,71 @@ li a:hover:not(.active) {
 
 /* Modo escuro */
 body.dark-mode {
-    background-color: rgb(18, 18, 18);
+    background-color: rgba(18, 18, 18, 0.95);
     color: #f5f5f5;
-}
+  }
+  
+  /* Conteúdo principal */
+  .dark-mode .content {
+    color: #f5f5f5;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Texto de fundo */
+  .dark-mode .back-text {
+    color: rgb(255 255 255 / 7%);
+  }
+  
+  .dark-mode .carousel{
+    box-shadow: 0 4px 10px #f5f5f517;
+  }
+  
+  .dark-mode .carousel-slide{
+    background-color: #151515;
+  }
 
-/* Estilos do botão */
-.mode-toggle {
+  .dark-mode .carousel-slide h3{
+    color: #ffffff;
+  }
+
+  .dark-mode .carousel-slide p{
+    color: #ffffff;
+  }
+  
+  
+  /* Links no modo escuro */
+  .dark-mode a {
+    color: #F5F5F5
+  }
+  
+  .dark-mode p a {
+    background-color: #2c2c2c;
+  }
+  
+  .dark-mode a:hover {
+    color: #070707;
+  }
+  
+  /* Botão no modo escuro */
+  .mode-toggle.dark-mode {
+    background-color: #333;
+    color: #f5f5f5;
+  }
+  
+  /* Rodapé */
+  .dark-mode footer a {
+    color: #bbb;
+    /* Cor mais clara no modo escuro */
+  }
+  
+  .dark-mode .email {
+    color: #f5f5f5;
+  }
+
+  
+  
+  /* Estilos do botão */
+  .mode-toggle {
     position: fixed;
     top: 10px;
     right: 10px;
@@ -183,9 +262,13 @@ body.dark-mode {
     font-size: 16px;
     color: #333;
     transition: background-color 0.3s, color 0.3s;
-}
-
-.mode-toggle.dark-mode {
+  }
+  
+  .mode-toggle.dark-mode {
     background-color: #555;
     color: #f5f5f5;
+  }
+
+ .dark-mode  .carousel-slide img {
+    box-shadow: 0 4px 10px #f7f7f733;
 }
