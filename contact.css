@@ -163,6 +163,13 @@ button {
 
 }
 
+/* Status */
+#form-status {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+  }
+
 p {
     padding: 1%;
 }
