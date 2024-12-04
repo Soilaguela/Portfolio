@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -16,6 +17,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="contact.css">
 </head>
+
 <body>
     <ul>
         <li> <button class="mode-toggle" id="modeToggle" style="
@@ -23,33 +25,35 @@
             top: auto;
             left: 7px; "><i class="bi bi-moon"></i></button>
         </li>
-        <li><a href="/Portfolio/img-pdf/Curriculum vitae-Soilabenguela.pdf" download>Download CV<i class="bi bi-download" style="padding: 12px;"></i></a></li>
-        <li><a href="Projects.html">Projects</a></li>
-       <li><a href="Contact.html">Contact</a></li>
+        <li><a href="/Portfolio/img-pdf/Curriculum vitae-Soilabenguela.pdf" download>Download CV<i
+                    class="bi bi-download" style="padding: 12px;"></i></a></li>
+        <li><a href="Contact.html">Contact Me</a></li>
         <li><a href="About.html">About Me</a></li>
+        <li><a href="Projects.html">My Projects</a></li>
         <li><a href="index.html">Home</a></li>
         <li style="float:left; font-size: 20px; font-weight: 500;"><a class="active" href="#about">SB!</a></li>
     </ul>
     <div class="back-text">Hello, World!</div>
 
     <main>
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="container">
                 <h1>Contact Me</h1>
-                <p>If you have any questions or would like to collaborate, please fill out the form below or reach out via email.</p>
+                <p>If you have any questions or would like to collaborate, please fill out the form below or reach out
+                    via email.</p>
+                <form id="contact-form" action="#" method="POST">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="O seu nome" required />
 
-                <form class="contact-form" action="soilabenguela@gmail.com" method="POST" enctype="text/plain">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-        
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
-        
-                    <button type="submit">Send Message</button>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="O seu email" required />
+
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" placeholder="Escreva a sua mensagem" required></textarea>
+
+                    <button type="submit">Enviar</button>
                 </form>
+                <div id="form-status"></div>
             </div>
         </section>
     </main>
@@ -61,6 +65,8 @@
     </footer>
 
     <script src="main.js" defer></script>
-
+    <script src="contact.js"></script>
+    <script src="server.js"></script>
 </body>
+
 </html>
