@@ -1,16 +1,26 @@
 {
-    "name": "portfolio",
-    "version": "1.0.0",
-    "description": "Meu portfólio pessoal",
-    "main": "server.js",
-    "scripts": {
-        "start": "node server.js"
-    },
-    "dependencies": {
-        "body-parser": "^1.20.3",
-        "cors": "^2.8.5",
-        "express": "^4.21.1"
-    },
-    "author": "",
-    "license": "MIT"
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Meu portfólio pessoal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "nodemailer": "^6.9.16"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Soilaguela/Portfolio.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Soilaguela/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Soilaguela/Portfolio#readme"
 }
